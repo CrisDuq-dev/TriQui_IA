@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triqui — Con IA invencible (Minimax)</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h1 style="text-align: center; margin-top: 0; color: #ecf0f1;">TriQui IA</h1>
+            <div class="turn-indicator" id="turnIndicator">Shift of: <span class="score-x">X</span></div>
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+        </div>
+
+        <div class="scoreboard">
+            <h2 style="margin-top: 0; color: #ecf0f1; border-bottom: 2px solid #34495e; padding-bottom: 10px;">
+                Bookmark
+            </h2>
+
+            <select id="modeSelector" class="mode-selector">
+                <option value="pvp">👫🏽 Player vs Player</option>
+                <option value="facil">🐙 Vs Polpi (Easy)</option>
+                <option value="dificil">🐙 Vs Smart Polpi (Hard-invincible)</option>
+            </select>
+
+            <div class="score">
+                <span class="score-x">Victories (X):</span>
+                <span id="scoreX">0</span>
+            </div>
+            <div class="score">
+                <span class="score-o">Victories (O):</span>
+                <span id="scoreO">0</span>
+            </div>
+            <div class="score" style="color: #bdc3c7;">
+                <span>Draws:</span>
+                <span id="scoreDraw">0</span>
+            </div>
+            <button onclick="resetGame()">Play Again</button>
+            <button class="btn-reset-scores" onclick="resetScores()">Reset Bookmarks</button>
+        </div>
+    </div>
+
+    <!-- ai.js se carga primero: game.js depende de sus funciones (getWinner, getComputerMove, etc.) -->
+    <script src="js/ai.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
