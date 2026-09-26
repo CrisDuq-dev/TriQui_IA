@@ -1,8 +1,10 @@
-# ♨️ Triqui con IA Invencible (Minimax)
+# Triqui con IA Invencible (Minimax)
 
 Juego de Triqui (Tic-Tac-Toe) construido en HTML, CSS y JavaScript puro sin frameworks ni dependencias, con un oponente de inteligencia artificial que implementa el algoritmo **Minimax con poda alfa-beta**, matemáticamente invencible.
 
-![Vista previa](assets/preview.png)
+<div align="center">
+  <img src="assets/preview.png" alt="Vista previa del Motor IA TriQui" width="700">
+</div>
 
 ## Por qué este proyecto
 
