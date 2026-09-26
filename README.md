@@ -12,12 +12,12 @@ Cualquiera puede construir un Triqui que dibuje X y O en una cuadrícula. La par
 
 ## Características
 
-- **3 modos de juego**: Jugador vs Jugador, vs Computadora (Fácil — aleatoria) y vs Computadora (Difícil — invencible).
+- **3 modos de juego**: Jugador vs Jugador, vs Computadora (Fácil - aleatoria) y vs Computadora (Difícil - invencible).
 - **IA con Minimax + poda alfa-beta**, implementada desde cero, sin librerías externas.
 - **Línea ganadora resaltada** con animación, en vez de solo anunciar el resultado por texto.
 - **Marcador persistente** durante la sesión (victorias de X, O y empates).
 - **Separación de Responsabilidades (SoC)**: Desacoplamiento estricto entre el motor algorítmico (`ai.js`) y la capa de presentación/controlador del DOM (`game.js`), facilitando el testing aislado y la escalabilidad del código.
-- **Pruebas automatizadas** que verifican no solo que la IA "funciona", sino que es realmente invencible — incluyendo una simulación de 200 partidas contra jugadas aleatorias.
+- **Pruebas automatizadas** que verifican no solo que la IA "funciona", sino que es realmente invencible - incluyendo una simulación de 200 partidas contra jugadas aleatorias.
 
 ## Cómo funciona la IA
 
